@@ -1,11 +1,17 @@
-var playlist = {'faces':'Ooh La La'}
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  playlist[artistName]= songTitle
+var playlist = {
+  'Foo Fighters': 'Everlong',
+  Prince: 'Purple Rain'
+}
+
+function updatePlaylist(playlist, artist, song) {
+  playlist[artist] = song
+
   return playlist
 }
 
-function removeFromPlaylist(playlist, artistName, songTitle){
-  delete meals.artistName;
+function removeFromPlaylist(playlist, artist) {
+  delete playlist[artist]
+
   return playlist
 }
